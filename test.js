@@ -1,6 +1,5 @@
 var test = require('tape');
 var classify = require('./ray-direction-classify');
-console.log(classify)
 
 test('the different combinations (int)', function(t) {
   [
