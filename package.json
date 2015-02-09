@@ -6,9 +6,6 @@
   "version": "1.0.0",
   "description": "ray direction classification (Eisemann et. al)",
   "main": "ray-direction-classify.js",
-  "dependencies": {
-    "tape": "^3.5.0"
-  },
   "scripts": {
     "test": "tape test.js"
   },
