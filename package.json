@@ -1,5 +1,36 @@
 {
   "devDependencies": {
     "tape": "^3.5.0"
-  }
+  },
+  "name": "ray-direction-classify",
+  "version": "1.0.0",
+  "description": "ray direction classification (Eisemann et. al)",
+  "main": "ray-direction-classify.js",
+  "dependencies": {
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmpvar/ray-direction-classify.git"
+  },
+  "keywords": [
+    "eisemann",
+    "ray",
+    "aabb",
+    "classification",
+    "3d",
+    "axis",
+    "aligned",
+    "bounding",
+    "box"
+  ],
+  "author": "Elijah Insua <tmpvar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmpvar/ray-direction-classify/issues"
+  },
+  "homepage": "https://github.com/tmpvar/ray-direction-classify"
 }
