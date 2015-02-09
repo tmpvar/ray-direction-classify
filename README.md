@@ -27,7 +27,7 @@ ok, what is `OPO`?
 
 ### constants
 
-there are 25 classes of ray directions which are specified in a human readable format consisting of three character codes: __P__lus, __M__inus, and zer__O__
+there are 25 classes of ray directions which are specified in a human readable format consisting of three character codes: __P__ lus, __M__ inus, and zer __O__
 
 Ok, that might be a bit confusing so let's run through an example.
 
