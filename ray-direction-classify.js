@@ -2,9 +2,9 @@ module.exports = classify;
 
 function classify(i, j, k) {
   // sign
-  i = (i>0) - (i<0);
-  j = (j>0) - (j<0);
-  k = (k>0) - (k<0);
+  i = typeof i === 'number' ? i ? i < 0 ? -1 : 1 : i === i ? 0 : NaN : NaN;;
+  j = typeof j === 'number' ? j ? j < 0 ? -1 : 1 : j === j ? 0 : NaN : NaN;;
+  k = typeof k === 'number' ? k ? k < 0 ? -1 : 1 : k === k ? 0 : NaN : NaN;;
 
   // b00110100 === MPO
   //    ||||||_ k non-zero (false)
