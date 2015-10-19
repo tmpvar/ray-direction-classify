@@ -3,7 +3,7 @@
     "tape": "^3.5.0"
   },
   "name": "ray-direction-classify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ray direction classification (Eisemann et. al)",
   "main": "ray-direction-classify.js",
   "scripts": {
