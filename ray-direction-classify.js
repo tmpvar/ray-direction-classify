@@ -1,10 +1,14 @@
 module.exports = classify;
 
+function sign(a) {
+  return typeof a === 'number' ? a ? a < 0 ? -1 : 1 : a === a ? 0 : 0 : 0
+}
+
 function classify(i, j, k) {
   // sign
-  i = typeof i === 'number' ? i ? i < 0 ? -1 : 1 : i === i ? 0 : NaN : NaN;;
-  j = typeof j === 'number' ? j ? j < 0 ? -1 : 1 : j === j ? 0 : NaN : NaN;;
-  k = typeof k === 'number' ? k ? k < 0 ? -1 : 1 : k === k ? 0 : NaN : NaN;;
+  i = sign(i);
+  j = sign(j);
+  k = sign(k);
 
   // b00110100 === MPO
   //    ||||||_ k non-zero (false)
@@ -13,9 +17,9 @@ function classify(i, j, k) {
   //    |||_ j negative (false)
   //    ||_ i non-zero (true)
   //    |_ i negative (true)
-  return (i>>>-1) << 5 | ((i>>>0)&1) << 4 |
-         (j>>>-1) << 3 | ((j>>>0)&1) << 2 |
-         (k>>>-1) << 1 | (k>>>0)&1;
+  return (i>>>-1) << 5 | (i&1) << 4 |
+         (j>>>-1) << 3 | (j&1) << 2 |
+         (k>>>-1) << 1 | (k&1);
 }
 
 classify.MMM = 63; // b00111111
